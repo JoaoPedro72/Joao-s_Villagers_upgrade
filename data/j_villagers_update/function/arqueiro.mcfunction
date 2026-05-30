@@ -1,6 +1,10 @@
 # Villager Arqueiro
 # parametros as @s at @s
 
+tag @s remove perdido
+
+execute if predicate j_villagers_update:makesound run playsound minecraft:entity.villager.ambient neutral @a[distance=..20]
+
 execute if entity @s[type=mannequin] if block ~ ~.6 ~ water run data modify entity @s Motion[1] set value 0.05
 execute if entity @s[type=mannequin] if block ~ ~.6 ~ water run scoreboard players set @s jump_cooldown 0
 
@@ -31,3 +35,5 @@ execute if entity @n[distance=..10,type=villager,tag=!AI_guarda,tag=!AI_arqueiro
 
 execute if score j_village_20_tick j_ticks matches 12 run function j_villagers_update:ia/procurar_villagers with storage j:raycast
 execute run function j_villagers_update:ia/patrulhar with storage j:raycast
+
+execute unless entity @e[distance=..25,type=villager,tag=!AI_guarda] run tag @s add perdido

@@ -20,6 +20,6 @@ execute if block ^ ^-.5 ^1 #j_data:atravessavel if block ^ ^-1.5 ^1 #j_data:atra
 
 execute if block ^ ^-1 ^1 #j_data:atravessavel if block ^ ^-2 ^1 #j_data:atravessavel run return fail
 
-scoreboard players set @s mob_speed 20
+scoreboard players operation @s mob_speed /= tres numero
 function j_ai:move
 execute store result score @s mob_speed run attribute @s minecraft:movement_speed get 100

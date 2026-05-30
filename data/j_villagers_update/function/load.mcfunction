@@ -14,6 +14,7 @@ scoreboard players set zero numero 0
 scoreboard players set um numero 1
 scoreboard players set menosum numero -1
 
+scoreboard players set tres numero 3
 scoreboard players set cinco numero 5
 scoreboard players set dez numero 10
 scoreboard players set vinte numero 20

@@ -3,6 +3,7 @@
 	"values": [
 		"j_data:timer",
 		"j_mobs:tick",
+		"j_ai:hurt",
 		"j_villagers_update:tick", 
 		"j_villagers_update:20_tick", 
 		"j_ai:20tick",
