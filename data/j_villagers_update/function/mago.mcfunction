@@ -3,8 +3,6 @@
 
 tag @s remove perdido
 
-execute if predicate j_villagers_update:makesound run playsound minecraft:entity.villager.ambient neutral @a[distance=..20]
-
 execute if entity @s if block ~ ~.6 ~ water run data modify entity @s Motion[1] set value 0.05
 execute if entity @s if block ~ ~.6 ~ water run scoreboard players set @s jump_cooldown 0
 
