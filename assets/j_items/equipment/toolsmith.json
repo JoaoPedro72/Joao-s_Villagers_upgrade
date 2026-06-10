@@ -2,12 +2,12 @@
   "layers": {
     "humanoid": [
       {
-        "texture": "toolsmith"
+        "texture": "j_items:toolsmith"
       }
     ],
     "humanoid_leggings": [
       {
-        "texture": "toolsmith"
+        "texture": "j_items:toolsmith"
       }
     ]
   }
