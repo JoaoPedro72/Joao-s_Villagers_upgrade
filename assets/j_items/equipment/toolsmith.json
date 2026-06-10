@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "toolsmith"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "toolsmith"
+      }
+    ]
+  }
+}
