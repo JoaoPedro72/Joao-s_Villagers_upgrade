@@ -1,0 +1,1 @@
+execute as @e[tag=skin] at @s run function j_ai:tp_skin

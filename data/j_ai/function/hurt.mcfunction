@@ -1,4 +1,4 @@
-execute unless score j_village_20_tick j_ticks matches 18 run return fail
+schedule function j_ai:hurt 20t replace
 
 execute as @e store result score @s j_vida_atual run data get entity @s Health
 execute as @e store result score @s j_vida_maxima run attribute @s max_health get

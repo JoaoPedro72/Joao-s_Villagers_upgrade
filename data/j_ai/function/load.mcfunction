@@ -25,3 +25,5 @@ scoreboard objectives add wander dummy
 scoreboard players add $temp cooldown 0
 scoreboard players set pulo numero 30
 scoreboard players set pulo_cooldown numero 1
+
+say Joao's Vilagers_upgrade Carregado
