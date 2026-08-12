@@ -2,8 +2,8 @@ summon mannequin ~ ~ ~ {CustomName:[{text:Arqueiro}],CustomNameVisible:0b,hide_d
 execute as @n[tag=new] run function j_villagers_update:dar_tags
 
 execute as @n[tag=new] store result entity @s attributes[{id:"minecraft:scale"}].base float 0.01 run random value 95..100
-scoreboard players set @n[tag=new] mob_speed 70
-scoreboard players set @n[tag=new] attack_cooldown 0
+scoreboard players set @n[tag=new] j.mob.speed 70
+scoreboard players set @n[tag=new] j.cooldown 0
 
 item replace entity @n[tag=new] armor.head with stick[minecraft:item_model="j_items:heads/villager_archer"]
 

@@ -1,0 +1,1 @@
+execute as @n[nbt={Brain.memories:{"minecraft:job_site":{value.pos:[I;39,1,198]}}}] run say oi

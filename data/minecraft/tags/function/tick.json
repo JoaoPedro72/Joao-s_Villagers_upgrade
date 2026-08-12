@@ -6,7 +6,6 @@
 		"j_ai:hurt",
 		"j_villagers_update:tick", 
 		"j_villagers_update:20_tick", 
-		"j_ai:20tick",
-		"j_villagers_update:spawnar_guardas"
+		"j_ai:20tick"
 	]
 }

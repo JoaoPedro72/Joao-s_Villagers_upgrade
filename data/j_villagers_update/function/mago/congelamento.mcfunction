@@ -1,4 +1,4 @@
-scoreboard players set @s attack_cooldown 3
+scoreboard players set @s j.cooldown 3
 
 execute as @e[tag=agressive,distance=..15] at @s run particle minecraft:snowflake ~ ~1 ~ 0 0 1 0.2 0 force
 execute as @e[tag=agressive,distance=..15] at @s run particle minecraft:snowflake ~ ~1 ~ 0 1 0 0.2 0 force

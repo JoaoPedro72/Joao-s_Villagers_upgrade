@@ -7,4 +7,4 @@ data merge entity @n[type=minecraft:zombie_villager,distance=..5] {ConversionTim
 tellraw @a[distance=..5] {"text":"<Clerico> Area Heal!"}
 playsound entity.villager.celebrate neutral @a[distance=..10] ~ ~ ~
 
-scoreboard players set @s attack_cooldown 10
+scoreboard players set @s j.cooldown 10

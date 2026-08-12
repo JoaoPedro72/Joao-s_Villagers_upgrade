@@ -1,0 +1,2 @@
+function j_villagers_update:bancadas/config_macro
+function j_villagers_update:bancadas/tag_tem_bloco with storage j:bloco

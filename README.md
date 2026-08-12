@@ -23,4 +23,4 @@ Agora clericos irão curar villagers ou mobs aliados proximos
 Agora Ferreiros irão consertar Iron_Golens proximos
 
 ## Açougueiros
-Agora eles vão procriar vacas proximas e quando houver um numero de vacas proximas ele mata as que estão sobrando
+Agora eles vão procriar vacas proximas e quando houver 1 j.num de vacas proximas ele mata as que estão sobrando

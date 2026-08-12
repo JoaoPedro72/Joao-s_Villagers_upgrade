@@ -1,4 +1,4 @@
-scoreboard players add @s attack_cooldown 40
+scoreboard players add @s j.cooldown 40
 effect give @n[type=iron_golem] instant_health 1 5 true
 
 execute at @n[type=iron_golem] run particle minecraft:happy_villager ~ ~ ~ 1 2 1 1 50

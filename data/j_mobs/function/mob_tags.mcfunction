@@ -1,5 +1,5 @@
-execute as @s[tag=!custom,tag=!sized,type=#j_data:need_id] unless score @s ids >= zero numero unless score @s ids <= zero numero run scoreboard players add $global ids 1
-execute as @s[tag=!custom,tag=!sized,type=#j_data:need_id] unless score @s ids >= zero numero unless score @s ids <= zero numero run scoreboard players operation @s ids = $global ids
+execute as @s[tag=!custom,tag=!sized,type=#j_data:need_id] unless score @s j.ids >= 0 j.num unless score @s j.ids <= 0 j.num run scoreboard players add $global j.ids 1
+execute as @s[tag=!custom,tag=!sized,type=#j_data:need_id] unless score @s j.ids >= 0 j.num unless score @s j.ids <= 0 j.num run scoreboard players operation @s j.ids = $global j.ids
 
 #domesticaveis
 
@@ -144,6 +144,8 @@ execute as @s[tag=guardian] run tag @s add agressive
 # enemy factions
 
 # Illagers
+execute as @s[predicate=j_villagers_update:inimigos/illager] run tag @s add illager_enemy
+
 execute as @s[tag=!illager,tag=vilage] run tag @s add illager_enemy
 execute as @s[tag=!illager,tag=undead] run tag @s add illager_enemy
 execute as @s[tag=!illager,tag=piglin] run tag @s add illager_enemy

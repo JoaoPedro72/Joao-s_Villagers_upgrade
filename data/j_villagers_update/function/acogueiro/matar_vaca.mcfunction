@@ -11,6 +11,6 @@ execute if entity @s[tag=achou_vacas] run return 0
 playsound minecraft:entity.player.attack.strong neutral @a[distance=..10]
 $kill @n[tag=$(id).target]
 tag @s remove quer_matar_vaca
-tag @s[scores={j_vacas_proximas=6..}] add quer_matar_vaca
+tag @s[scores={j.num_vacas=6..}] add quer_matar_vaca
 
-scoreboard players set @s attack_cooldown 600
+scoreboard players set @s j.cooldown 600

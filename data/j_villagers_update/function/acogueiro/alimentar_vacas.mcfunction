@@ -23,4 +23,4 @@ execute as @e[type=cow, distance=..10] at @s run playsound minecraft:entity.hors
 tag @s remove quer_reproduzir_vaca
 tag @e[tag=in_love] remove in_love
 
-scoreboard players set @s attack_cooldown 600
+scoreboard players set @s j.cooldown 600
