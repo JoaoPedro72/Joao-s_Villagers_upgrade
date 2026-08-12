@@ -1,7 +1,6 @@
 summon mannequin ~ ~ ~ {CustomName:[{text:Guarda}],CustomNameVisible:0b,hide_description:1b,Health:40,equipment:{mainhand:{count:1,id:wooden_sword}},attributes:[{id:max_health,base:40f}],Tags:["AI_guarda","special","AI","new"],profile:{texture:"j_items:mannequin/villager_guarda",model:wide}}
 execute as @n[tag=new] run function j_villagers_update:dar_tags
 
-execute as @n[tag=new] store result entity @s attributes[{id:"minecraft:scale"}].base float 0.01 run random value 95..100
 
 scoreboard players set @n[tag=new] j.mob.speed 70
 scoreboard players set @n[tag=new] j.cooldown 0

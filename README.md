@@ -1,4 +1,4 @@
-# Joao's_Vilagers_upgrade
+# Joao's_Villagers_upgrade
 
 Datapack que adiciona novos comportamentos para os villagers
 
