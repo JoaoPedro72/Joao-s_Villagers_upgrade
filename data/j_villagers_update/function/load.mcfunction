@@ -34,9 +34,14 @@ scoreboard players set 50 j.num 50
 scoreboard players set 100 j.num 100
 
 scoreboard objectives add j.cooldown_2 dummy
+scoreboard objectives add j.cooldown_3 dummy
+
 scoreboard objectives add j.ticks dummy
 
 scoreboard objectives add j.kills dummy
 scoreboard objectives add j.num_vacas dummy
 
 say Joao's Villagers Update Loaded
+
+function j_villagers_update:tick
+function j_villagers_update:20_tick

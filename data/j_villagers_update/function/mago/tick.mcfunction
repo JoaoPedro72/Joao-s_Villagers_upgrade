@@ -19,7 +19,7 @@ execute if score 300 j.ticks matches 1 run function j_ai:lost_target with storag
 function j_villagers_update:mago/mover_ate_inimigos with storage j:raycast
 
 #função para encontrar inimigo
-execute if score 20 j.ticks matches 12 run function j_villagers_update:ia/encontrar_inimigos with storage j:raycast
+execute if score 40 j.ticks matches 7 run function j_villagers_update:ia/encontrar_inimigos with storage j:raycast
 
 #Condições para patrulhar
 execute if entity @s[tag=tem_alvo] run return fail
@@ -32,7 +32,7 @@ execute as @s[tag=!perdido] if entity @n[distance=..10,type=villager] if entity 
 execute if entity @n[distance=..10,type=villager] run function j_ai:wander
 execute if entity @n[distance=..10,type=villager] at @n[type=villager] unless entity @n[tag=agressive,distance=20] run return fail
 
-execute if score 20 j.ticks matches 12 run function j_villagers_update:ia/procurar_villagers with storage j:raycast
+execute if score 100 j.ticks matches 7 run function j_villagers_update:ia/procurar_villagers with storage j:raycast
 execute run function j_villagers_update:ia/patrulhar with storage j:raycast
 
 execute unless entity @e[distance=..25,type=villager,tag=!AI_guarda] run tag @s add perdido

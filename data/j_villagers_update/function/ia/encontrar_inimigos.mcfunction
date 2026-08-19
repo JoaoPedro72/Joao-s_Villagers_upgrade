@@ -10,7 +10,7 @@ $execute if entity @e[tag=$(id).target,distance=..25] run return fail
 
 #marca inimigo proximo como alvo
 $tag @n[predicate=j_villagers_update:inimigos/vilage,distance=..8] add $(id).target
-$execute unless entity @n[tag=$(id).target] run tag @n[predicate=j_villagers_update:inimigos/vilage,distance=..25,tag=seen] add $(id).target
+$execute unless entity @n[tag=$(id).target] run tag @n[predicate=j_villagers_update:inimigos/vilage,distance=..25,tag=j.visto] add $(id).target
 #testa se inimigo distante esta no campo de visão
 $execute unless entity @n[tag=$(id).target] anchored eyes as @e[predicate=j_villagers_update:inimigos/vilage,type=!creeper,distance=..25] facing entity @s eyes positioned ^ ^-0.5 ^1.5 run function j_villagers_update:ia/raycast with storage j:raycast
 

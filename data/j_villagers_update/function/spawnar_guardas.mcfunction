@@ -1,4 +1,4 @@
-schedule function j_villagers_update:spawnar_guardas 10t replace
+schedule function j_villagers_update:spawnar_guardas 10t append
 
 execute as @e[type=villager,tag=criar_guarda] at @s run function j_villagers_update:guarda/transformar_em
 execute as @e[type=villager,tag=criar_arqueiro] at @s run function j_villagers_update:arqueiro/transformar_em

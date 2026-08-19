@@ -21,8 +21,8 @@ tag @s[scores={j.num_vacas=..4}] remove quer_matar_vaca
 
 
 # Logica
-execute if entity @s[tag=!achou_vacas,tag=quer_reproduzir_vaca] if score 20 j.ticks matches 12 run function j_villagers_update:acogueiro/encontrar_vacas with storage j:raycast
-execute if entity @s[tag=!achou_vacas,tag=quer_matar_vaca] if score 20 j.ticks matches 12 run function j_villagers_update:acogueiro/encontrar_vacas with storage j:raycast
+execute if entity @s[tag=!achou_vacas,tag=quer_reproduzir_vaca] if score 100 j.ticks matches 55 run function j_villagers_update:acogueiro/encontrar_vacas with storage j:raycast
+execute if entity @s[tag=!achou_vacas,tag=quer_matar_vaca] if score 100 j.ticks matches 55 run function j_villagers_update:acogueiro/encontrar_vacas with storage j:raycast
 
 execute if entity @s[tag=achou_vacas,tag=quer_reproduzir_vaca] run function j_villagers_update:acogueiro/alimentar_vacas with storage j:raycast
 execute if entity @s[tag=achou_vacas,tag=quer_matar_vaca] run function j_villagers_update:acogueiro/matar_vaca with storage j:raycast

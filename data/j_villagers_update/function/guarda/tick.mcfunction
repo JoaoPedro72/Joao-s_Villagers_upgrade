@@ -20,7 +20,7 @@ execute if score 300 j.ticks matches 1 run function j_ai:lost_target with storag
 function j_villagers_update:guarda/atacar_inimigo with storage j:raycast
 
 #função para encontrar inimigo
-execute if score 20 j.ticks matches 12 run function j_villagers_update:ia/encontrar_inimigos with storage j:raycast
+execute if score 40 j.ticks matches 16 run function j_villagers_update:ia/encontrar_inimigos with storage j:raycast
 
 #Condições para patrulhar
 execute if entity @s[tag=tem_alvo] run return fail

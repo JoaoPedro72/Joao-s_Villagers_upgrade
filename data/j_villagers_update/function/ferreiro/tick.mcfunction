@@ -9,4 +9,4 @@ data modify storage j:raycast follow_distance set value 15
 execute if score 300 j.ticks matches 1 run function j_ai:lost_target with storage j:raycast
 
 function j_villagers_update:ferreiro/andar_ate with storage j:raycast
-execute if score 20 j.ticks matches 12 run function j_villagers_update:ferreiro/procurar_iron_golen with storage j:raycast
+execute if score 100 j.ticks matches 90 run function j_villagers_update:ferreiro/procurar_iron_golen with storage j:raycast

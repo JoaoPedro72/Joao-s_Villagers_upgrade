@@ -19,19 +19,17 @@ execute if score 300 j.ticks matches 1 run function j_ai:lost_target with storag
 function j_villagers_update:arqueiro/mover_ate_inimigos with storage j:raycast
 
 #função para encontrar inimigo
-execute if score 20 j.ticks matches 12 run function j_villagers_update:ia/encontrar_inimigos with storage j:raycast
+execute if score 40 j.ticks matches 2 run function j_villagers_update:ia/encontrar_inimigos with storage j:raycast
 
 #Condições para patrulhar
 execute if entity @s[tag=tem_alvo] run return fail
+execute if entity @e[tag=agressive,distance=..5,type=!creeper] run return fail
 
+#Se estiver com vida baixa marca para comer
 execute if score 100 j.ticks matches 0 if entity @s[tag=hurt] run tag @s add com_fome
 execute if score 100 j.ticks matches 0 if entity @s[tag=hurt] run scoreboard players set @s j.cooldown 6
 
-execute if entity @n[distance=..10,type=villager,tag=!AI_guarda,tag=!AI_arqueiro] run function j_ai:wander
+#Se tiver perto de vilagers ele vaga
+execute as @s[tag=!j.tem_bloco] run function j_villagers_update:ia/wander
 
-execute if entity @n[distance=..10,type=villager,tag=!AI_guarda,tag=!AI_arqueiro] at @n[type=villager] unless entity @n[tag=agressive,distance=20] run return fail
-
-execute if score 20 j.ticks matches 12 run function j_villagers_update:ia/procurar_villagers with storage j:raycast
-execute run function j_villagers_update:ia/patrulhar with storage j:raycast
-
-execute unless entity @e[distance=..25,type=villager,tag=!AI_guarda] run tag @s add perdido
+execute as @s[tag=j.tem_bloco] run function j_villagers_update:ia/ir_ate_bancada with storage j:raycast

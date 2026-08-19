@@ -1,3 +1,3 @@
 @echo off
-robocopy ".\" "..\..\..\..\resourcepacks\Joao-s_Vilagers_upgrade\" /E /XO
+robocopy ".\assets\" "..\..\..\..\resourcepacks\Joao-s_Vilagers_upgrade\assets\" /E /XO
 pause

@@ -8,15 +8,15 @@ $execute if entity @e[tag=$(id).target] run return 2
 #Partículas para debug, podem ser removidas depois
 #particle cloud ~ ~ ~ 0 0 0 0 1
 
-execute positioned ~ ~ ~ if entity @n[distance=..1.25,type=!#j_data:not_mobs] run tag @n[type=!#j_data:not_mobs] add seen
+execute positioned ~ ~ ~ if entity @n[distance=..1.25,type=!#j_data:not_mobs] run tag @n[type=!#j_data:not_mobs] add j.visto
 $execute positioned ~ ~ ~ if entity @n[distance=..1.25,type=!#j_data:not_mobs] run tag @n[type=!#j_data:not_mobs] add $(id).target
 execute positioned ~ ~ ~ if entity @n[distance=..1.25,type=!#j_data:not_mobs] run return 4
 
-execute positioned ~ ~-1 ~ if entity @n[distance=..1.25,type=!#j_data:not_mobs] run tag @n[type=!#j_data:not_mobs] add seen
+execute positioned ~ ~-1 ~ if entity @n[distance=..1.25,type=!#j_data:not_mobs] run tag @n[type=!#j_data:not_mobs] add j.visto
 $execute positioned ~ ~-1 ~ if entity @n[distance=..1.25,type=!#j_data:not_mobs] run tag @n[type=!#j_data:not_mobs] add $(id).target
 execute positioned ~ ~-1 ~ if entity @n[distance=..1.25,type=!#j_data:not_mobs] run return 4
 
-execute positioned ~ ~-2 ~ if entity @n[distance=..1.25,type=!#j_data:not_mobs] run tag @n[type=!#j_data:not_mobs] add seen
+execute positioned ~ ~-2 ~ if entity @n[distance=..1.25,type=!#j_data:not_mobs] run tag @n[type=!#j_data:not_mobs] add j.visto
 $execute positioned ~ ~-2 ~ if entity @n[distance=..1.25,type=!#j_data:not_mobs] run tag @n[type=!#j_data:not_mobs] add $(id).target
 execute positioned ~ ~-2 ~ if entity @n[distance=..1.25,type=!#j_data:not_mobs] run return 4
 

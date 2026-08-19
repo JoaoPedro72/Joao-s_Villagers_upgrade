@@ -23,11 +23,26 @@
       }
     },
     {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "nbt": "{Tags:[\"agressive\"]}"
-      }
+      "condition": "minecraft:all_of",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"agressive\"]}"
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:creeper"
+            }
+          }
+        }
+      ]
     }
   ]
 }
