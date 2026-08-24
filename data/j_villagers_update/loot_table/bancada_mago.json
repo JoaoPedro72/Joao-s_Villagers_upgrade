@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bat_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:entity_data": {
+                  "id": "minecraft:marker",
+                  "Tags": [
+                    "j.criar_bancada_mago"
+                  ]
+                },
+                "minecraft:item_model": "j_items:bancada/mago",
+                "minecraft:item_name": "Bancada do Mago"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

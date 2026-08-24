@@ -1,8 +1,6 @@
 {
 	"replace": false,
 	"values": [
-		"j_villagers_update:load",
-		"j_ai:load",
-		"j_villagers_update:spawnar_guardas"
+		"j_villagers_update:load"
 	]
 }

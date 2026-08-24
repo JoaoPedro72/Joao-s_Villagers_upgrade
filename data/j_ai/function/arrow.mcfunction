@@ -1,3 +1,6 @@
+playsound minecraft:entity.arrow.shoot neutral @a[distance=..10] ~ ~ ~
+function j_villagers_update:ia/swing
+
 summon arrow ^ ^ ^2 {Tags:["new"]}
 data modify entity @n[type=arrow] damage set value 5
 

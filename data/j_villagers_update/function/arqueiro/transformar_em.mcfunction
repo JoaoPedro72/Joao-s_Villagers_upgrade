@@ -6,6 +6,7 @@ scoreboard players set @n[tag=new] j.mob.speed 70
 scoreboard players set @n[tag=new] j.cooldown 0
 
 item replace entity @n[tag=new] armor.head with stick[minecraft:item_model="j_items:heads/villager_archer"]
+item replace entity @n[tag=new] weapon.mainhand with bow
 
 execute as @n[tag=new] run function j_mobs:dar_id
 tag @n[tag=new] remove new

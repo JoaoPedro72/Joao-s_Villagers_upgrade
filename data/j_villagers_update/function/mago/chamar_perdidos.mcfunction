@@ -51,6 +51,7 @@ execute rotated 80 0 run particle minecraft:portal ^ ^1 ^-1 0 1 0 0 2 force @a[d
 effect give @n[tag=perdido] glowing 1
 playsound minecraft:block.portal.travel neutral @a[distance=..10] ~ ~ ~ 0.05 1 0.1
 playsound minecraft:entity.villager.yes neutral @a[distance=..10]
+function j_villagers_update:ia/swing
 
 scoreboard players add @s j.cooldown_2 1
 effect give @s slowness 1 100 true

@@ -32,17 +32,17 @@ scoreboard players operation @s j.alvo.z *= @s j.mob.speed
 execute store result entity @s Motion[0] double 0.00004 run scoreboard players get @s j.alvo.x
 execute store result entity @s Motion[2] double 0.00004 run scoreboard players get @s j.alvo.z
 
-execute if score @s j.jump >= pulo_cooldown j.num if score @s j.alvo.y > pulo j.num run tag @s add quer_pular
-execute if score @s j.jump >= pulo_cooldown j.num rotated ~ 0 unless block ^ ^ ^1 #j_data:atravessavel unless block ^ ^ ^1 #j_data:cerca_e_parede run tag @s add quer_pular
+execute if score @s j.jump >= j.cooldown.pulo j.num if score @s j.alvo.y > pulo j.num run tag @s add quer_pular
+execute if score @s j.jump >= j.cooldown.pulo j.num rotated ~ 0 unless block ^ ^ ^1 #j_data:atravessavel unless block ^ ^ ^1 #j_data:cerca_e_parede run tag @s add quer_pular
 
 execute if entity @s[tag=quer_pular] unless block ~ ~-.5 ~ #j_data:nao_pular_quando_em_cima run data modify entity @s Motion[1] set value 0.45d
 execute if entity @s[tag=quer_pular] run scoreboard players set @s j.jump 0
 execute if entity @s[tag=quer_pular] run tag @s remove quer_pular
 
 
-execute if score @s j.jump = pulo_cooldown j.num if block ~ ~-0.5 ~ #j_data:atravessavel run scoreboard players set @s j.jump 0
+execute if score @s j.jump = j.cooldown.pulo j.num if block ~ ~-0.5 ~ #j_data:atravessavel run scoreboard players set @s j.jump 0
 
-execute if score @s j.jump = pulo_cooldown j.num run scoreboard players remove @s j.jump 1
+execute if score @s j.jump = j.cooldown.pulo j.num run scoreboard players remove @s j.jump 1
 
 tag @e[tag=j_path] remove j_path
 kill @e[tag=j_path_used]

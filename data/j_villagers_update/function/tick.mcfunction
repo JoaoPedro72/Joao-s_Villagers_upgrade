@@ -19,12 +19,14 @@ execute if score 40 j.ticks matches 30 as @e[type=villager] at @s if data entity
 execute as @e[type=villager] at @s if data entity @s VillagerData{profession:"minecraft:butcher"} run function j_villagers_update:acogueiro/tick
 execute if score 40 j.ticks matches 10 as @e[type=villager] at @s if data entity @s VillagerData{profession:"minecraft:farmer"} run function j_villagers_update:fazendeiro/tick
 
+execute if score 20 j.ticks matches 10 as @e[type=villager] at @s run function j_villagers_update:ia/iluminar
+
 execute as @e[type=marker,tag=bola_de_fogo_mago] at @s run function j_villagers_update:mago/magia_mover
 
 function j_villagers_update:spawnar_guardas
-execute if score 20 j.ticks matches 16 run function j_villagers_update:bancadas/invocar_bancada
+execute if score 20 j.ticks matches 16 run function j_villagers_update:bancadas/invocar_e_remover
 
 execute as @e[tag=undead] at @s run data modify entity @s last_hurt_by_mob set from entity @n[predicate=j_villagers_update:inimigos/undead, distance=..15, type=!witch] UUID
 execute as @e[tag=illager] at @s run data modify entity @s last_hurt_by_mob set from entity @n[predicate=j_villagers_update:inimigos/illager, distance=..15] UUID
 
-function j_villagers_update:guarda/bancada
+function j_villagers_update:bancadas/tick

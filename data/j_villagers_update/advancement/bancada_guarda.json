@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "looking_at_guarda": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific": {
+                "type": "minecraft:player",
+                "looking_at": {
+                  "nbt": "{Tags:[\"AI_guarda\"]}"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "j_villagers_update:bancada_guarda"
+    ]
+  }
+}

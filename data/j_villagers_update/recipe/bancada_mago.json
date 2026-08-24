@@ -2,14 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-    "ec",
+    "bb",
     "pp",
     "pp"
   ],
   "key": {
-    "p": "#minecraft:planks",
-    "e": "minecraft:iron_sword",
-    "c": "minecraft:iron_helmet"
+    "p": "#minecraft:stone_crafting_materials",
+    "b": "minecraft:book"
   },
   "result": {
     "id": "minecraft:bat_spawn_egg",
@@ -17,11 +16,11 @@
       "minecraft:entity_data": {
         "id": "minecraft:marker",
         "Tags": [
-          "j.criar_bancada_guarda"
+          "j.criar_bancada_mago"
         ]
       },
-      "minecraft:item_model": "j_items:bancada/guarda",
-      "minecraft:item_name": "Bancada do Guarda"
+      "minecraft:item_model": "j_items:bancada/mago",
+      "minecraft:item_name": "Bancada do Mago"
     },
     "count": 1
   }
