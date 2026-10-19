@@ -1,11 +1,11 @@
 
-$execute if entity @s[tag=tem_alvo] unless entity @n[tag=$(id).target] run scoreboard players add @s j.kills 1
-$execute if entity @s[tag=tem_alvo] unless entity @n[tag=$(id).target] run tag @s remove tem_alvo
+$execute if entity @s[tag=j.has_target] unless entity @n[tag=$(id).target] run scoreboard players add @s j.kills 1
+$execute if entity @s[tag=j.has_target] unless entity @n[tag=$(id).target] run tag @s remove j.has_target
 
 $execute unless entity @n[tag=$(id).target] unless entity @n[predicate=j_villagers_update:inimigos/vilage,distance=..15] run scoreboard players set @s j.cooldown 3
 $execute unless entity @n[tag=$(id).target] unless entity @n[predicate=j_villagers_update:inimigos/vilage,distance=..15] run return fail
 
-tag @s add tem_alvo
+tag @s add j.has_target
 
 rotate @s facing entity @n[predicate=j_villagers_update:inimigos/vilage] feet
 

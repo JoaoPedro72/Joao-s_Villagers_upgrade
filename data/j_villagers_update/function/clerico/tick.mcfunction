@@ -1,4 +1,5 @@
 #Vilage Healer AI
+
 execute if entity @n[tag=undead,distance=4..15] unless entity @n[tag=vilage,tag=hurt,distance=1..15] run effect give @s slowness 2 10 true
 execute if entity @n[tag=vilage,tag=hurt,tag=!golen,distance=..5] if score @s j.cooldown matches 0 run function j_villagers_update:clerico/heal_aura
 execute if entity @n[tag=undead,distance=..5] if score @s j.cooldown matches 0 run function j_villagers_update:clerico/heal_aura

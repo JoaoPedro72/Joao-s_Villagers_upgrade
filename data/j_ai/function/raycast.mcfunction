@@ -20,7 +20,7 @@ execute positioned ~ ~-2 ~ if entity @n[distance=..1.25,type=!#j_data:not_mobs] 
 $execute positioned ~ ~-2 ~ if entity @n[distance=..1.25,type=!#j_data:not_mobs] run tag @n[type=!#j_data:not_mobs] add $(id).target
 execute positioned ~ ~-2 ~ if entity @n[distance=..1.25,type=!#j_data:not_mobs] run return 4
 
-execute unless block ~ ~ ~ #j_data:atravessar run return 1
+execute unless block ~ ~ ~ #j_data:raycast_ignores run return 1
 
 $execute if entity @s[distance=..$(follow_distance)] positioned ^ ^ ^.8 run return run function j_ai:raycast with storage j:raycast
 $execute unless entity @s[distance=..$(follow_distance)] positioned ^ ^ ^.8 run return 0

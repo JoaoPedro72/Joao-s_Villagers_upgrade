@@ -3,6 +3,8 @@
 
 tag @s remove perdido
 
+execute if block ~ ~ ~ #j_data:cerca_e_parede run data modify entity @s Motion[1] set value 0.5d
+
 execute if entity @s[type=mannequin] if block ~ ~.6 ~ water run data modify entity @s Motion[1] set value 0.05
 execute if entity @s[type=mannequin] if block ~ ~.6 ~ water run scoreboard players set @s j.jump 0
 
@@ -16,13 +18,13 @@ function j_ai:carregar_raycast
 execute if score 300 j.ticks matches 1 run function j_ai:lost_target with storage j:raycast
 
 #função para caso tenha inimigo
-function j_villagers_update:arqueiro/mover_ate_inimigos with storage j:raycast
+execute as @s[tag=j.has_target] run function j_villagers_update:arqueiro/mover_ate_inimigos with storage j:raycast
 
 #função para encontrar inimigo
 execute if score 40 j.ticks matches 2 run function j_villagers_update:ia/encontrar_inimigos with storage j:raycast
 
 #Condições para patrulhar
-execute if entity @s[tag=tem_alvo] run return fail
+execute if entity @s[tag=j.has_target] run return fail
 execute if entity @e[tag=agressive,distance=..5,type=!creeper] run return fail
 
 #Se estiver com vida baixa marca para comer

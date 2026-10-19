@@ -33,13 +33,17 @@ scoreboard players set 40 j.num 40
 scoreboard players set 50 j.num 50
 scoreboard players set 100 j.num 100
 
+#redus 1 por seg
+scoreboard objectives add j.cooldown dummy
 scoreboard objectives add j.cooldown_2 dummy
 scoreboard objectives add j.cooldown_3 dummy
 
 scoreboard objectives add j.ticks dummy
 
 scoreboard objectives add j.kills dummy
-scoreboard objectives add j.num_vacas dummy
+
+scoreboard objectives add j.num.animais dummy
+scoreboard objectives add j.num.modo dummy
 
 scoreboard objectives add j.pos.x dummy
 scoreboard objectives add j.pos.y dummy
@@ -49,8 +53,7 @@ scoreboard objectives add j.alvo.x dummy
 scoreboard objectives add j.alvo.y dummy
 scoreboard objectives add j.alvo.z dummy
 
-scoreboard objectives add j.cooldown_2 dummy
-scoreboard objectives add j.cooldown dummy
+
 scoreboard objectives add j.jump dummy
 scoreboard objectives add j.mob.speed dummy
 

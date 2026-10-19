@@ -4,12 +4,10 @@
 #$(dano) = dano do guarda
 #excutada por guarda
 #at @s
+$execute unless entity @e[tag=$(id).target] run return run tag @s remove j.has_target
 
-
-$execute unless entity @e[tag=$(id).target] run return fail
-
-$execute if score 20 j.ticks matches 1 if score @s j_vida_atual > 10 j.num run rotate @s facing entity @n[tag=$(id).target] feet
-execute if score @s j_vida_atual <= 10 j.num run rotate @s ~180 ~
+$execute if score 20 j.ticks matches 1 run rotate @s facing entity @n[tag=$(id).target] feet
+execute if score @s j_vida_atual matches ..10 run rotate @s ~180 ~
 
 $execute if score @s j_vida_atual > 10 j.num unless entity @n[tag=$(id).target,distance=..1] run function j_ai:move
 

@@ -1,13 +1,13 @@
 
-$execute if entity @s[tag=tem_alvo] unless entity @n[tag=$(id).target] run scoreboard players add @s j.kills 1
-$execute if entity @s[tag=tem_alvo] unless entity @n[tag=$(id).target] run tag @s remove tem_alvo
+$execute if entity @s[tag=j.has_target] unless entity @n[tag=$(id).target] run scoreboard players add @s j.kills 1
+$execute if entity @s[tag=j.has_target] unless entity @n[tag=$(id).target] run tag @s remove j.has_target
 
 $execute unless entity @n[tag=$(id).target] run scoreboard players set @s j.cooldown 3
 $execute unless entity @n[tag=$(id).target] run return fail
 
 $execute as @n[tag=$(id).target,tag=!agressive] run return fail
 
-tag @s add tem_alvo
+tag @s add j.has_target
 
 $execute if score 20 j.ticks matches 1 run rotate @s facing entity @n[tag=$(id).target] feet
 execute if score 20 j.ticks matches 1 if score @s j_vida_atual <= 10 j.num run rotate @s ~180 ~

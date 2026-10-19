@@ -8,37 +8,7 @@ execute as @s[tag=!custom,type=minecraft:cat] run tag @s add tameable
 
 #passive Neutral Mobs
 
-execute as @s[tag=!custom,type=minecraft:cow] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:pig] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:sheep] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:chicken] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:ocelot] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:polar_bear] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:panda] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:bat] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:llama] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:camel] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:horse] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:donkey] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:fox] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:frog] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:goat] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:bee] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:mooshroom] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:armadillo] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:axolotl] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:dolphin] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:mule] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:rabbit] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:turtle] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:parrot] run tag @s add passive
-
-execute as @s[tag=!custom,type=minecraft:squid] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:glow_squid] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:cod] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:salmon] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:tropical_fish] run tag @s add passive
-execute as @s[tag=!custom,type=minecraft:pufferfish] run tag @s add passive
+execute as @s[tag=!custom,type=#j_mobs:passive] run tag @s add passive
 
 #aquatic mobs
 
@@ -51,40 +21,18 @@ execute as @s[tag=!custom,type=minecraft:pufferfish] run tag @s add aquatic
 
 #villager faction
 
-execute as @s[tag=!custom,type=minecraft:villager] run tag @s add vilage
+execute as @s[tag=!custom,type=#j_mobs:vilage] run tag @s add vilage
 execute as @s[tag=!custom,type=minecraft:villager] run tag @s add AI
-execute as @s[tag=!custom,type=minecraft:wandering_trader] run tag @s add vilage
 
-execute as @s[tag=!custom,type=minecraft:iron_golem] run tag @s add golen
-execute as @s[tag=!custom,type=minecraft:snow_golem] run tag @s add golen
-execute as @s[tag=!custom,type=minecraft:copper_golem] run tag @s add golen
+execute as @s[tag=!custom,type=#j_mobs:golem] run tag @s add golen
 
 #illager faction
 
-execute as @s[tag=!custom,type=minecraft:vindicator] run tag @s add illager
-execute as @s[tag=!custom,type=minecraft:evoker] run tag @s add illager
-execute as @s[tag=!custom,type=minecraft:witch] run tag @s add illager
-execute as @s[tag=!custom,type=minecraft:pillager] run tag @s add illager
-execute as @s[tag=!custom,type=minecraft:vex] run tag @s add illager
-execute as @s[tag=!custom,type=minecraft:ravager] run tag @s add illager
+execute as @s[tag=!custom,type=#j_mobs:illager] run tag @s add illager
 
 #undead faction
 
-execute as @s[tag=!custom,type=minecraft:zombie] run tag @s add undead
-execute as @s[tag=!custom,type=minecraft:husk] run tag @s add undead
-execute as @s[tag=!custom,type=minecraft:drowned] run tag @s add undead
-execute as @s[tag=!custom,type=minecraft:zoglin] run tag @s add undead
-execute as @s[tag=!custom,type=minecraft:zombie_villager] run tag @s add undead
-execute as @s[tag=!custom,type=minecraft:zombie_horse] run tag @s add undead
-execute as @s[tag=!custom,type=minecraft:zombified_piglin] run tag @s add undead
-
-execute as @s[tag=!custom,type=minecraft:skeleton] run tag @s add undead
-execute as @s[tag=!custom,type=minecraft:bogged] run tag @s add undead
-execute as @s[tag=!custom,type=minecraft:skeleton_horse] run tag @s add undead
-execute as @s[tag=!custom,type=minecraft:wither_skeleton] run tag @s add undead
-execute as @s[tag=!custom,type=minecraft:stray] run tag @s add undead
-
-execute as @s[tag=!custom,type=minecraft:phantom] run tag @s add undead
+execute as @s[tag=!custom,type=#j_mobs:undead] run tag @s add undead
 
 #nether faction
 
@@ -170,10 +118,5 @@ execute as @s[tag=!piglin,tag=guardian] run tag @s add piglin_enemy
 
 
 
-execute as @s[tag=!custom,type=minecraft:iron_golem] run tag @s add vilage
-execute as @s[tag=!custom,type=minecraft:snow_golem] run tag @s add vilage
-execute as @s[tag=!custom,type=minecraft:trader_llama] run tag @s add vilage
-execute as @s[tag=!custom,type=minecraft:allay] run tag @s add vilage
-execute as @s[tag=!custom,type=minecraft:copper_golem] run tag @s add vilage
 
-tag @s add taged
+tag @s add j.has_tags
