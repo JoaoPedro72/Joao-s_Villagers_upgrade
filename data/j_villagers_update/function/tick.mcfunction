@@ -24,22 +24,21 @@ execute as @e[tag=illager] at @s run data modify entity @s last_hurt_by_mob set 
 
 function j_villagers_update:bancadas/tick
 
+execute if score 20 j.ticks matches 10 as @e[type=villager,tag=j.fazendeiro] at @s run function j_villagers_update:fazendeiro/20tick
+
 execute unless predicate j_villagers_update:gather_time run return fail
-
 # clerico
-execute as @e[type=villager,tag=j.clerico] at @s run function j_villagers_update:clerico/tick
+execute as @e[tag=j.clerico] at @s run function j_villagers_update:clerico/tick
 # ferreiros
-execute as @e[type=villager,tag=j.ferreiro] at @s run function j_villagers_update:ferreiro/tick
+execute as @e[tag=j.ferreiro] at @s run function j_villagers_update:ferreiro/tick
 # bibliotecario
-execute if score 40 j.ticks matches 30 as @e[type=villager,tag=j.bibliotecario] at @s run function j_villagers_update:bibliotecario/tick
+execute if score 40 j.ticks matches 30 as @e[tag=j.bibliotecario] at @s run function j_villagers_update:bibliotecario/tick
 # açougueiro
-execute as @e[type=villager,tag=j.acougueiro] at @s run function j_villagers_update:profissoes/acougueiro
+execute as @e[tag=j.acougueiro] at @s run function j_villagers_update:profissoes/acougueiro
 # coureiro
-execute as @e[type=villager,tag=j.coureiro] at @s run function j_villagers_update:profissoes/coureiro
+execute as @e[tag=j.coureiro] at @s run function j_villagers_update:profissoes/coureiro
 # fazendeiro
-execute as @e[type=villager,tag=j.fazendeiro] at @s run function j_villagers_update:fazendeiro/tick
-execute if score 40 j.ticks matches 10 as @e[type=villager,tag=j.fazendeiro] at @s run function j_villagers_update:fazendeiro/20tick
-
+execute as @e[tag=j.fazendeiro] at @s run function j_villagers_update:fazendeiro/tick
 
 # LENHADOR
-execute as @e[type=villager,tag=j.lenhador] at @s run function j_villagers_update:profissoes/lenhador
+execute as @e[tag=j.lenhador] at @s run function j_villagers_update:profissoes/lenhador

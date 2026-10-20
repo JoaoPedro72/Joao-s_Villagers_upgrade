@@ -1,4 +1,4 @@
-execute if score 300 j.ticks matches 1 run function j_ai:lost_target with storage j:raycast
+execute if score 300 j.ticks matches 1 run function j_ai:lost_target with entity @s data."j:raycast"
 
 #$say modo reproduzir $(id)
 
@@ -8,7 +8,8 @@ execute as @s[scores={j.num.animais=6..}] run return run scoreboard players set 
 
 
 $execute as @s[tag=!j.has_target] run data merge storage j:raycast {alvo:$(id)}
-execute as @s[tag=!j.has_target] run function j_villagers_update:fazer/procurar/macro with storage j:raycast
+function j_ai:carregar_raycast
+execute as @s[tag=!j.has_target] run function j_villagers_update:fazer/procurar/macro with entity @s data."j:raycast"
 execute as @s[tag=!j.has_target] run return run scoreboard players set @s j.cooldown 15
 
-function j_villagers_update:fazer/reproduzir/macro2 with storage j:raycast
+function j_villagers_update:fazer/reproduzir/macro2 with entity @s data."j:raycast"
