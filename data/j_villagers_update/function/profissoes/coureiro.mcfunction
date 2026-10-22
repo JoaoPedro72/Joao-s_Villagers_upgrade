@@ -1,7 +1,7 @@
 # Parametros:
 # as @s at @s
-execute if block ~ ~ ~ #j_data:cerca_e_parede run data modify entity @s Motion[1] set value 0.5d
-execute if block ~ ~ ~ #j_data:cerca_e_parede run tp ^ ^ ^.5
+# execute if block ~ ~ ~ #j_data:cerca_e_parede run data modify entity @s Motion[1] set value 0.5d
+function j_villagers_update:fazer/passar_cerca
 
 # Controle do tempo
 execute as @s[scores={j.cooldown=1..}] run return -1

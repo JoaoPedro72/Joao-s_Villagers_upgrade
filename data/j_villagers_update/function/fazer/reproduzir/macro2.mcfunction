@@ -1,5 +1,5 @@
 # vai ate a vaca
-$rotate @s facing entity @n[tag=$(id).target] feet
+$execute if score @s j.cooldown_virar matches 0 run rotate @s facing entity @n[tag=$(id).target] feet
 $execute unless entity @n[tag=$(id).target,distance=..2] run return run function j_ai:move
 
 # quando alcança o animal alvo alimenta ela

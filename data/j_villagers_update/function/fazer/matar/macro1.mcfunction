@@ -6,7 +6,7 @@ $execute store result score @s j.num.animais if entity @e[type=minecraft:$(id),d
 execute as @s[scores={j.num.animais=0}] run return run scoreboard players set @s j.cooldown 2
 execute as @s[scores={j.num.animais=..5}] run return run scoreboard players set @s j.cooldown 15
 
-$execute as @s[tag=!j.has_target] run data merge storage j:raycast {alvo:$(id)}
+$execute as @s[tag=!j.has_target] run data modify entity @s data."j:raycast" merge value {alvo:$(id)}
 execute as @s[tag=!j.has_target] run function j_villagers_update:fazer/procurar/macro with entity @s data."j:raycast"
 execute as @s[tag=!j.has_target] run return run scoreboard players set @s j.cooldown 15
 

@@ -6,6 +6,8 @@ tag @s remove j.bibliotecario
 tag @s remove j.acougueiro
 tag @s remove j.coureiro
 tag @s remove j.fazendeiro
+tag @s remove j.pastor
+
 
 tag @s remove j.lenhador
 tag @s remove j.mineiro

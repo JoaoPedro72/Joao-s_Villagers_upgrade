@@ -26,6 +26,10 @@ function j_villagers_update:bancadas/tick
 
 execute if score 20 j.ticks matches 10 as @e[type=villager,tag=j.fazendeiro] at @s run function j_villagers_update:fazendeiro/20tick
 
+# LENHADOR
+execute as @e[tag=j.lenhador] at @s run function j_villagers_update:profissoes/lenhador
+
+
 execute unless predicate j_villagers_update:gather_time run return fail
 # clerico
 execute as @e[tag=j.clerico] at @s run function j_villagers_update:clerico/tick
@@ -37,8 +41,9 @@ execute if score 40 j.ticks matches 30 as @e[tag=j.bibliotecario] at @s run func
 execute as @e[tag=j.acougueiro] at @s run function j_villagers_update:profissoes/acougueiro
 # coureiro
 execute as @e[tag=j.coureiro] at @s run function j_villagers_update:profissoes/coureiro
+# pastor
+execute as @e[tag=j.pastor] at @s run function j_villagers_update:profissoes/pastor
 # fazendeiro
 execute as @e[tag=j.fazendeiro] at @s run function j_villagers_update:fazendeiro/tick
 
-# LENHADOR
-execute as @e[tag=j.lenhador] at @s run function j_villagers_update:profissoes/lenhador
+

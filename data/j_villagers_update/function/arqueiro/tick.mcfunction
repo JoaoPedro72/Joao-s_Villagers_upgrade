@@ -1,9 +1,10 @@
 # Villager Arqueiro
 # parametros as @s at @s
 
+execute if score 300 j.ticks matches 1 run function j_villagers_update:ia/pode_melhorar
 tag @s remove perdido
 
-execute if block ~ ~ ~ #j_data:cerca_e_parede run data modify entity @s Motion[1] set value 0.5d
+#execute if block ~ ~ ~ #j_data:cerca_e_parede run data modify entity @s Motion[1] set value 0.5d
 
 execute if entity @s[type=mannequin] if block ~ ~.6 ~ water run data modify entity @s Motion[1] set value 0.05
 execute if entity @s[type=mannequin] if block ~ ~.6 ~ water run scoreboard players set @s j.jump 0

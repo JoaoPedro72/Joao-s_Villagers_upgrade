@@ -9,7 +9,7 @@ $execute as @n[tag=$(id).target,tag=!agressive] run return fail
 
 tag @s add j.has_target
 
-$execute if score 20 j.ticks matches 1 run rotate @s facing entity @n[tag=$(id).target] feet
+$execute if score @s j.cooldown_virar matches 0 if score 20 j.ticks matches 1 run rotate @s facing entity @n[tag=$(id).target] feet
 execute if score 20 j.ticks matches 1 if score @s j_vida_atual <= 10 j.num run rotate @s ~180 ~
 
 

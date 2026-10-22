@@ -9,4 +9,7 @@ execute as @e[tag=AI] at @s unless block ~ ~-0.5 ~ #j_data:atravessavel if score
 
 #Era para fazer o controle do cooldown dos ataques, mas acaboou sendo usado para todos os cooldowns
 execute as @e[tag=AI] unless score @s j.cooldown <= 0 j.num run scoreboard players remove @s j.cooldown 1
+execute as @e[scores={j.cooldown_virar=1..}] run scoreboard players remove @s j.cooldown_virar 1
+
+execute as @e[tag=AI] unless score @s j.cooldown_virar matches 0.. run scoreboard players set @s j.cooldown 0
 execute as @e[tag=AI, scores={j.cooldown=..-1}] run scoreboard players set @s j.cooldown 0

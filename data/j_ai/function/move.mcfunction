@@ -1,16 +1,9 @@
 kill @e[type=marker,tag=j_path_used,tag=!j_path]
 
-#se o bloco a frente e acima da frente
-execute if score 100 j.ticks < 50 j.num align xyz positioned ~.5 ~ ~.5 rotated ~ 0 unless block ^ ^.5 ^1 #j_data:atravessavel unless block ^ ^1.5 ^1 #j_data:atravessavel at @s run function j_ai:rotate_wander {Rotation:-25}
-execute if score 100 j.ticks > 50 j.num align xyz positioned ~.5 ~ ~.5 rotated ~ 0 unless block ^ ^.5 ^1 #j_data:atravessavel unless block ^ ^1.5 ^1 #j_data:atravessavel at @s run function j_ai:rotate_wander {Rotation:25}
+execute if score 100 j.ticks matches ..49 run data modify entity @s data."j.raycast".Rotation set value 22.5
+execute if score 100 j.ticks matches 50.. run data modify entity @s data."j.raycast".Rotation set value -22.5
 
-#se no mesmo bloco a acima do mesmo bloco
-execute if score 100 j.ticks < 50 j.num align xyz positioned ~.5 ~ ~.5 rotated ~ 0 unless block ^ ^.5 ^ #j_data:atravessavel unless block ^ ^1.5 ^ #j_data:atravessavel at @s run function j_ai:rotate_wander {Rotation:-25}
-execute if score 100 j.ticks > 50 j.num align xyz positioned ~.5 ~ ~.5 rotated ~ 0 unless block ^ ^.5 ^ #j_data:atravessavel unless block ^ ^1.5 ^ #j_data:atravessavel at @s run function j_ai:rotate_wander {Rotation:25}
-
-#se no mesmo bloco é cerca
-execute if score 100 j.ticks < 50 j.num align xyz positioned ~.5 ~ ~.5 rotated ~ 0 if block ^ ^.5 ^.5 #j_data:cerca_e_parede at @s run function j_ai:rotate_wander {Rotation:-15}
-execute if score 100 j.ticks > 50 j.num align xyz positioned ~.5 ~ ~.5 rotated ~ 0 if block ^ ^.5 ^.5 #j_data:cerca_e_parede at @s run function j_ai:rotate_wander {Rotation:15}
+execute align xyz positioned ~.5 ~ ~.5 rotated ~ 0 if function j_ai:obstaculo run return fail
 
 summon marker ^ ^ ^1.5 {Tags:["j_path","j_path_used"]}
 

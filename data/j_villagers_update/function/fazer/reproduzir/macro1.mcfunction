@@ -7,7 +7,7 @@ execute as @s[scores={j.num.animais=..1}] run return run scoreboard players set 
 execute as @s[scores={j.num.animais=6..}] run return run scoreboard players set @s j.cooldown 15
 
 
-$execute as @s[tag=!j.has_target] run data merge storage j:raycast {alvo:$(id)}
+$execute as @s[tag=!j.has_target] run data modify entity @s data."j:raycast" merge value {alvo:$(id)}
 function j_ai:carregar_raycast
 execute as @s[tag=!j.has_target] run function j_villagers_update:fazer/procurar/macro with entity @s data."j:raycast"
 execute as @s[tag=!j.has_target] run return run scoreboard players set @s j.cooldown 15

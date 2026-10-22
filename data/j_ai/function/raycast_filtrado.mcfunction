@@ -6,7 +6,7 @@
 $execute if entity @e[tag=$(id).target] run return 2
 
 #Partículas para debug, podem ser removidas depois
-particle cloud ~ ~ ~ 0 0 0 0 1
+#particle cloud ~ ~ ~ 0 0 0 0 1
 
 $execute positioned ~ ~ ~ if entity @n[distance=..1.25,type=$(alvo)] run tag @n[type=$(alvo)] add j.visto
 $execute positioned ~ ~ ~ if entity @n[distance=..1.25,type=$(alvo)] run tag @n[type=$(alvo)] add $(id).target

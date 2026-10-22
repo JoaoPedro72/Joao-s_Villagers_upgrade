@@ -6,7 +6,7 @@
 #at @s
 $execute unless entity @e[tag=$(id).target] run return run tag @s remove j.has_target
 
-$execute if score 20 j.ticks matches 1 run rotate @s facing entity @n[tag=$(id).target] feet
+$execute if score @s j.cooldown_virar matches 0 if score 20 j.ticks matches 1 run rotate @s facing entity @n[tag=$(id).target] feet
 execute if score @s j_vida_atual matches ..10 run rotate @s ~180 ~
 
 $execute if score @s j_vida_atual > 10 j.num unless entity @n[tag=$(id).target,distance=..1] run function j_ai:move
