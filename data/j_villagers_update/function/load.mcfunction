@@ -1,4 +1,5 @@
 scoreboard objectives add distance dummy
+scoreboard objectives add j.blocks dummy
 
 scoreboard players set villager_attack j.num 2
 scoreboard players set iron_golen_heal j.num 400
