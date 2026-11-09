@@ -12,6 +12,8 @@ playsound block.wood.hit block @a[distance=..10] ~ ~ ~
 execute at @e[sort=furthest,tag=joao_tronco_da_arvore,limit=1,distance=..30] run fill ~ ~ ~ ~ ~ ~ air replace #logs
 execute as @e[sort=furthest,tag=joao_tronco_da_arvore,limit=1,distance=..30] run kill @s
 
+effect give @s slowness 1 255 true
+
 execute if entity @n[tag=joao_tronco_da_arvore,distance=..20] run return fail
 
 scoreboard players set @s j.cooldown 20

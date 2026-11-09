@@ -1,6 +1,8 @@
 scoreboard objectives add distance dummy
 scoreboard objectives add j.blocks dummy
 
+
+
 scoreboard players set villager_attack j.num 2
 scoreboard players set iron_golen_heal j.num 400
 
@@ -35,6 +37,7 @@ scoreboard objectives add j.cooldown dummy
 scoreboard objectives add j.cooldown_2 dummy
 scoreboard objectives add j.cooldown_3 dummy
 scoreboard objectives add j.cooldown_virar dummy
+scoreboard objectives add j.cooldown_contar_espaco dummy
 
 scoreboard objectives add j.ticks dummy
 
@@ -66,7 +69,10 @@ scoreboard players add $temp j.cooldown_2 0
 scoreboard players set pulo j.num 30
 scoreboard players set j.cooldown.pulo j.num 1
 
+kill @e[tag=contar_espaco]
 
+kill @e[tag=joao_tronco_da_arvore]
+kill @e[tag=joao_raiz_da_arvore]
 
 say Joao's Villagers Update Loaded
 

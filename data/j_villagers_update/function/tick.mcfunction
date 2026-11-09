@@ -1,4 +1,4 @@
-schedule function j_villagers_update:tick 1t append
+schedule function j_villagers_update:tick 1t replace
 
 execute if score 40 j.ticks matches 1 as @e[type=villager,tag=!j.possui_profissao] unless data entity @s VillagerData{profession:"minecraft:none"} run function j_villagers_update:dar_tags_profissoes
 execute if score 40 j.ticks matches 1 as @e[type=villager,tag=j.possui_profissao] if data entity @s VillagerData{profession:"minecraft:none"} run function j_villagers_update:tirar_tags_profissoes
@@ -6,6 +6,7 @@ execute if score 40 j.ticks matches 1 as @e[type=villager,tag=j.possui_profissao
 execute as @e[tag=vilage,type=zombie_villager] run function j_villagers_update:zombie_villager
 execute as @e[tag=undead,type=villager] run function j_villagers_update:dar_tags
 
+execute as @e[type=villager,tag=!j.data_saved] run function j_ai:carregar_raycast
 execute as @e[type=villager,tag=!AI] run tag @s add AI
 
 execute as @e[tag=AI_guarda] at @s run function j_villagers_update:guarda/tick
@@ -13,6 +14,8 @@ execute as @e[tag=AI_arqueiro] at @s run function j_villagers_update:arqueiro/ti
 execute as @e[tag=AI_mago] at @s run function j_villagers_update:mago/tick
 
 execute if score 20 j.ticks matches 10 as @e[type=villager] at @s run function j_villagers_update:ia/iluminar
+
+execute as @p at @s as @e[type=villager,distance=..12] unless score @s j.cooldown_contar_espaco matches 1.. at @s run function j_villagers_update:fazer/contar_espaco/main with entity @s data."j:raycast"
 
 execute as @e[type=marker,tag=bola_de_fogo_mago] at @s run function j_villagers_update:mago/magia_mover
 
@@ -30,7 +33,7 @@ execute if score 20 j.ticks matches 10 as @e[type=villager,tag=j.fazendeiro] at 
 execute as @e[tag=j.lenhador] at @s run function j_villagers_update:profissoes/lenhador
 
 
-execute unless predicate j_villagers_update:gather_time run return fail
+execute unless predicate j_villagers_update:work_time run return fail
 # clerico
 execute as @e[tag=j.clerico] at @s run function j_villagers_update:clerico/tick
 # ferreiros

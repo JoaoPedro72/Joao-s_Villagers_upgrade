@@ -39,6 +39,7 @@ particle minecraft:snowflake ~ ~ ~ 00 06 -1 0.1 0 force
 particle minecraft:snowflake ~ ~ ~ 01 06 00 0.1 0 force
 particle minecraft:snowflake ~ ~ ~ -1 06 00 0.1 0 force
 
+execute as @e[predicate=j_villagers_update:inimigos/vilage,distance=..15] at @s run damage @s 2 magic
 execute as @e[predicate=j_villagers_update:inimigos/vilage,distance=..15] at @s run effect give @s slowness 15 3 true
 execute as @e[predicate=j_villagers_update:inimigos/vilage,distance=..15] at @s run effect give @s weakness 15 3 true
 execute as @e[predicate=j_villagers_update:inimigos/vilage,distance=..15] at @s run data modify entity @s TicksFrozen set value 140
