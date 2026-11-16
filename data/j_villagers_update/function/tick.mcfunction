@@ -28,10 +28,13 @@ execute as @e[tag=illager] at @s run data modify entity @s last_hurt_by_mob set 
 function j_villagers_update:bancadas/tick
 
 execute if score 20 j.ticks matches 10 as @e[type=villager,tag=j.fazendeiro] at @s run function j_villagers_update:fazendeiro/20tick
-
+#say teste 1
+execute unless predicate j_villagers_update:day run return fail
+#say teste dia
 # LENHADOR
 execute as @e[tag=j.lenhador] at @s run function j_villagers_update:profissoes/lenhador
-
+# CONSTRUTOR
+execute as @e[tag=j.construtor] at @s run function j_villagers_update:profissoes/construtor
 
 execute unless predicate j_villagers_update:work_time run return fail
 # clerico

@@ -4,6 +4,7 @@ execute unless entity @n[tag=joao_raiz_da_arvore,distance=..2] if score 20 j.tic
 
 execute unless entity @n[tag=joao_raiz_da_arvore,distance=..2] run return run function j_ai:move
 
+execute unless score 10 j.ticks matches 1 run function j_villagers_update:ia/swing
 execute unless score 20 j.ticks matches 1 run return fail
 
 execute at @n[tag=joao_raiz_da_arvore] if block ~ ~ ~ #logs run function j_villagers_update:fazer/cortar_arvore/replantar

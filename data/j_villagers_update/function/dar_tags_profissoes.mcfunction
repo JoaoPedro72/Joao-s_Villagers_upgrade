@@ -1,3 +1,6 @@
+execute if entity @s[tag=j.construtor] run return fail
+execute if entity @s[tag=j.lenhador] run return fail
+
 execute if data entity @s[tag=!j.profissao_custom] VillagerData{profession:"minecraft:cleric"} run tag @s add j.clerico
 execute if data entity @s[tag=!j.profissao_custom] VillagerData{profession:"minecraft:weaponsmith"} run tag @s add j.ferreiro
 execute if data entity @s[tag=!j.profissao_custom] VillagerData{profession:"minecraft:armorer"} run tag @s add j.ferreiro

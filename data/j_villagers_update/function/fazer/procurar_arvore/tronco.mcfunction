@@ -15,7 +15,7 @@ execute if score @s joao_achou_arvore matches 1 run return 1
 
 execute if block ~ ~-1 ~ #air run return 0
 
-summon marker ~ ~.5 ~ {Tags:["joao_raiz_da_arvore"]}
+summon area_effect_cloud ~ ~.5 ~ {Tags:["joao_raiz_da_arvore"],custom_particle:{type:happy_villager},Radius:0,Duration:2000}
 function j_villagers_update:fazer/procurar_arvore/marcar_troncos
 
 scoreboard players set @s joao_achou_arvore 1

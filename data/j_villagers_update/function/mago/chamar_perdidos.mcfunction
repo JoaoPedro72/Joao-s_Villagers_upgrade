@@ -61,3 +61,5 @@ execute if score @s j.cooldown_2 < 100 j.num run return fail
 
 scoreboard players set @s j.cooldown_2 0
 tp @n[tag=perdido,distance=..150] @s
+
+tag @n[tag=perdido] remove perdido
