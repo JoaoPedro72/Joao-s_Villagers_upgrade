@@ -4,16 +4,16 @@ execute unless entity @n[tag=joao_raiz_da_arvore,distance=..2] if score 20 j.tic
 
 execute unless entity @n[tag=joao_raiz_da_arvore,distance=..2] run return run function j_ai:move
 
+data merge entity @s {Motion:[0.0,0.0,0.0]}
+
 execute unless score 10 j.ticks matches 1 run function j_villagers_update:ia/swing
 execute unless score 20 j.ticks matches 1 run return fail
 
 execute at @n[tag=joao_raiz_da_arvore] if block ~ ~ ~ #logs run function j_villagers_update:fazer/cortar_arvore/replantar
 
 playsound block.wood.hit block @a[distance=..10] ~ ~ ~
-execute at @e[sort=furthest,tag=joao_tronco_da_arvore,limit=1,distance=..30] run fill ~ ~ ~ ~ ~ ~ air replace #logs
-execute as @e[sort=furthest,tag=joao_tronco_da_arvore,limit=1,distance=..30] run kill @s
+execute as @e[sort=furthest,tag=joao_tronco_da_arvore,limit=1,distance=..30] at @s run function j_villagers_update:fazer/cortar_arvore/remover_tronco
 
-effect give @s slowness 1 255 true
 
 execute if entity @n[tag=joao_tronco_da_arvore,distance=..20] run return fail
 

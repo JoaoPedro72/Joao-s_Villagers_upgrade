@@ -9,6 +9,8 @@ scoreboard players set @s joao_areaX 0
 scoreboard players set @s joao_areaZ 0
 scoreboard players set @s joao_achou_arvore 0
 
-scoreboard players set @s j.cooldown 2
+scoreboard players set @s j.cooldown 30
 
-execute as @s align xyz positioned ~-8.5 ~ ~-8.5 positioned over world_surface run function j_villagers_update:fazer/procurar_arvore/area_for_z
+kill @e[tag=j.parte_de_arvore,distance=..50]
+
+execute as @s align xyz positioned ~-30.5 ~ ~-30.5 positioned over world_surface run function j_villagers_update:fazer/procurar_arvore/area_for_z

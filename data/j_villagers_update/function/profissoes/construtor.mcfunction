@@ -11,8 +11,6 @@ execute if block ~ ~ ~ minecraft:dirt_path if block ~03 ~ ~-1 minecraft:dirt_pat
 
 execute if entity @n[tag=agressive,distance=..15] run return fail
 
-execute unless block ~ ~ ~ #air run function j_ai:move
-execute if entity @n[tag=j.construcao,distance=..1] run function j_ai:move
 
 execute if entity @n[tag=j.construcao,tag=!j.placed] if score @s j.cooldown matches 0 run function j_villagers_update:fazer/construir/main
 execute if entity @n[tag=j.construcao,tag=!j.placed] run return fail

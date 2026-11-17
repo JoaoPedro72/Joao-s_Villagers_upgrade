@@ -71,8 +71,7 @@ scoreboard players set j.cooldown.pulo j.num 1
 
 kill @e[tag=contar_espaco]
 
-kill @e[tag=joao_tronco_da_arvore]
-kill @e[tag=joao_raiz_da_arvore]
+kill @e[tag=j.parte_de_arvore]
 
 say Joao's Villagers Update Loaded
 
