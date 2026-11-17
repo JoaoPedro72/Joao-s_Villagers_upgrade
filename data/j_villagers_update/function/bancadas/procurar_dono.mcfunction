@@ -1,4 +1,4 @@
-tag @e[predicate=j_villagers_update:inimigos/vilage,distance=..25,tag=!j.visto] add j.visto
+tag @e[tag=agressive,type=!creeper,distance=..25,tag=!j.visto] add j.visto
 
 
 function j_villagers_update:bancadas/config_macro

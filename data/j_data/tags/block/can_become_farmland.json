@@ -4,6 +4,9 @@
 		"minecraft:dirt",
         "minecraft:grass_block",
         "minecraft:podzol",
-		"minecraft:mycelium"
+		"minecraft:mycelium",
+		"minecraft:moss_block",
+		"minecraft:coarse_dirt",
+		"minecraft:rooted_dirt"
 	]
 }
