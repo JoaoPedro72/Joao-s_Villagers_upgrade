@@ -12,7 +12,7 @@ tag @s remove perdido
 
 execute if entity @n[tag=agressive,distance=..15] run return fail
 
-
+execute if entity @n[tag=j.construcao,distance=..50] run data merge entity @s {NoAI:0b}
 execute if entity @n[tag=j.construcao,distance=..50] if score @s j.cooldown matches 0 run function j_villagers_update:fazer/construir/main
 execute if entity @n[tag=j.construcao,distance=..50] run return fail
 

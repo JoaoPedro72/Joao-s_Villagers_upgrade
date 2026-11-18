@@ -1,5 +1,9 @@
 execute if score @s j.cooldown_virar matches 0 run rotate @s facing entity @n[tag=joao_raiz_da_arvore]
 
+data merge entity @s {NoAI:0b}
+effect give @s slowness 2 3 true
+scoreboard players set @s j.mob.speed 25
+
 execute unless entity @n[tag=joao_raiz_da_arvore,distance=..2] if score 20 j.ticks matches 1 run function j_villagers_update:fazer/cortar_arvore/remover_folhas
 
 execute unless entity @n[tag=joao_raiz_da_arvore,distance=..2] run return run function j_ai:move
