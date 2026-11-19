@@ -5,8 +5,13 @@ execute if entity @s[tag=j.place.plank] run fill ~ ~ ~ ~ ~ ~ oak_planks
 execute if entity @s[tag=j.place.cobble] run fill ~ ~ ~ ~ ~ ~ cobblestone
 execute if entity @s[tag=j.place.air] run fill ~ ~ ~ ~ ~ ~ air
 
-execute if entity @s[tag=j.place.door] run fill ~ ~ ~ ~ ~ ~ oak_door[half=lower]
-execute if entity @s[tag=j.place.door] run fill ~ ~1 ~ ~ ~1 ~ oak_door[half=upper]
+execute if entity @s[tag=j.place.door] if block ~ ~ ~1 #j_data:can_build_on positioned ~ ~ ~1 unless entity @n[distance=..0.7,tag=j.construcao,tag=!j.place.air] run tag @s add north
+
+execute if entity @s[tag=j.place.door,tag=north] run fill ~ ~ ~ ~ ~ ~ oak_door[half=lower,facing=north]
+execute if entity @s[tag=j.place.door,tag=north] run fill ~ ~1 ~ ~ ~1 ~ oak_door[half=upper,facing=north]
+
+execute if entity @s[tag=j.place.door,tag=!north] run fill ~ ~ ~ ~ ~ ~ oak_door[half=lower,facing=west]
+execute if entity @s[tag=j.place.door,tag=!north] run fill ~ ~1 ~ ~ ~1 ~ oak_door[half=upper,facing=west]
 
 execute if entity @s[tag=j.place.lanter] run fill ~ ~ ~ ~ ~ ~ lantern[hanging=true]
 execute if entity @s[tag=j.place.path] run fill ~ ~ ~ ~ ~ ~ dirt_path
@@ -34,7 +39,7 @@ execute if data storage j:aux {bancada:0} run fill ~ ~ ~ ~ ~ ~ stonecutter
 execute if data storage j:aux {bancada:1} run fill ~ ~ ~ ~ ~ ~ cartography_table
 execute if data storage j:aux {bancada:2} run fill ~ ~ ~ ~ ~ ~ fletching_table
 execute if data storage j:aux {bancada:3} run fill ~ ~ ~ ~ ~ ~ smithing_table
-execute if data storage j:aux {bancada:4} run fill ~ ~ ~ ~ ~ ~ grindstone
+execute if data storage j:aux {bancada:4} run fill ~ ~ ~ ~ ~ ~ grindstone[face=floor]
 execute if data storage j:aux {bancada:5} run fill ~ ~ ~ ~ ~ ~ loom
 execute if data storage j:aux {bancada:6} run fill ~ ~ ~ ~ ~ ~ smoker
 execute if data storage j:aux {bancada:7} run fill ~ ~ ~ ~ ~ ~ blast_furnace

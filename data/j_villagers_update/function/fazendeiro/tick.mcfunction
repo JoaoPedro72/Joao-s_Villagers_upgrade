@@ -9,6 +9,8 @@ execute unless score @s j.num.modo matches 0.. run scoreboard players set @s j.n
 
 execute as @s[tag=!j.data_saved] run function j_ai:carregar_raycast
 
+scoreboard players set @s j.mob.speed 25
+
 execute as @s[scores={j.num.modo=0}] run function j_villagers_update:fazer/reproduzir/macro1 {id:cow}
 execute as @s[scores={j.num.modo=1}] run function j_villagers_update:fazer/reproduzir/macro1 {id:sheep}
 execute as @s[scores={j.num.modo=2}] run function j_villagers_update:fazer/reproduzir/macro1 {id:chicken}

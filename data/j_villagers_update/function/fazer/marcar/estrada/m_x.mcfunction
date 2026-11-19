@@ -10,6 +10,7 @@ execute positioned ~00 ~ ~01 positioned over world_surface if block ~ ~-1 ~ #j_d
 
 execute positioned over world_surface if block ~ ~-1 ~ dirt_path positioned ~-1 ~ ~ run return run function j_villagers_update:fazer/marcar/estrada/m_x
 
+execute if score @s j.caminho matches 0 positioned ~-1 ~ ~ positioned over world_surface if block ~ ~-1 ~ #j_data:can_build_on run summon marker ~ ~-1 ~ {Tags:["j.criar_estrada"],Rotation:[90,0]}
 execute if score @s j.caminho matches 0 run return run scoreboard players set @s j.caminho 10
 scoreboard players remove @s j.caminho 1
 

@@ -6,7 +6,7 @@ rotate @n[tag=new,tag=j.esquerda] ~90 0
 execute positioned ^00 ^ ^4 if block ~ ~ ~ #j_data:can_build_on unless entity @n[tag=j.pode_crescer,distance=..1] run summon marker ~ ~ ~ {Tags:["j.pode_crescer","new","j.frente"]}
 rotate @n[tag=new,tag=j.frente] ~180 0
 execute positioned ^-2 ^ ^2 if block ~ ~ ~ #j_data:can_build_on unless entity @n[tag=j.pode_crescer,distance=..1] run summon marker ~ ~ ~ {Tags:["j.pode_crescer","new","j.direita"]}
-rotate @n[tag=new,tag=j.esquerda] ~-90 0
+rotate @n[tag=new,tag=j.direita] ~-90 0
 
 tag @e[tag=new] remove new
 
