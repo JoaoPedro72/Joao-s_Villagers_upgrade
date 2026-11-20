@@ -89,8 +89,8 @@ execute positioned ^-2 ^2 ^1 if block ~ ~ ~ #j_data:can_build_on run summon mark
 execute positioned ^00 ^2 ^2 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.air"]}
 execute positioned ^01 ^2 ^2 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.air"]}
 execute positioned ^-1 ^2 ^2 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.air"]}
-execute positioned ^02 ^2 ^2 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.air"]}
-execute positioned ^-2 ^2 ^2 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.air"]}
+execute positioned ^02 ^2 ^2 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.glass_pane"]}
+execute positioned ^-2 ^2 ^2 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.glass_pane"]}
 
 execute positioned ^00 ^2 ^3 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.air"]}
 execute positioned ^01 ^2 ^3 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.air"]}

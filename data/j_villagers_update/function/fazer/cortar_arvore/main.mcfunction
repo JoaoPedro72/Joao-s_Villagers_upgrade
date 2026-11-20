@@ -16,10 +16,10 @@ execute unless score 20 j.ticks matches 1 run return fail
 playsound block.wood.hit block @a[distance=..10] ~ ~ ~
 execute as @e[sort=furthest,tag=joao_tronco_da_arvore,limit=1,distance=..30] at @s run function j_villagers_update:fazer/cortar_arvore/remover_tronco
 
+execute at @n[tag=joao_raiz_da_arvore] if block ~ ~ ~ #logs run function j_villagers_update:fazer/cortar_arvore/replantar
 
 execute if entity @n[tag=joao_tronco_da_arvore,distance=..20] run return fail
 
 scoreboard players set @s j.cooldown 20
 
-execute at @n[tag=joao_raiz_da_arvore] if block ~ ~ ~ #logs run function j_villagers_update:fazer/cortar_arvore/replantar
 execute as @n[tag=joao_raiz_da_arvore] run kill @s

@@ -87,8 +87,8 @@ execute positioned ^-2 ^2 ^1 run summon marker ~ ~ ~ {Tags:["j.construcao","j.pl
 execute positioned ^00 ^2 ^2 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.air"]}
 execute positioned ^01 ^2 ^2 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.air"]}
 execute positioned ^-1 ^2 ^2 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.air"]}
-execute positioned ^02 ^2 ^2 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.air"]}
-execute positioned ^-2 ^2 ^2 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.air"]}
+execute positioned ^02 ^2 ^2 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.glass_pane"]}
+execute positioned ^-2 ^2 ^2 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.glass_pane"]}
 
 execute positioned ^00 ^2 ^3 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.air"]}
 execute positioned ^01 ^2 ^3 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.air"]}

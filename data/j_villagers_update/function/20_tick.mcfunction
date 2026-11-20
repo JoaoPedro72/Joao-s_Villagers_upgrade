@@ -1,6 +1,6 @@
 schedule function j_villagers_update:20_tick 1s replace
 
-execute as @e[type=minecraft:marker] at @s run particle minecraft:flame ~ ~ ~ 0 0 0 0 1 force
+execute as @e[type=minecraft:marker] at @s run particle minecraft:copper_fire_flame ~ ~ ~ 0 1 0 0.1 0 force
 
 #execute unless score 20 j.ticks matches 15 run return fail
 

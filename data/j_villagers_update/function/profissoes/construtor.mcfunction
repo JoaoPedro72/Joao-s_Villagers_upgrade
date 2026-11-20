@@ -13,4 +13,4 @@ execute unless entity @n[tag=j.construcao,distance=..50] run execute as @e[sort=
 
 execute unless entity @n[tag=j.construcao,distance=..50] run execute at @n[tag=j.criar_estrada] rotated as @n[tag=j.criar_estrada] align xyz positioned ~.5 ~.5 ~.5 run function j_villagers_update:fazer/marcar/estrada
 
-scoreboard players set @s j.cooldown 5
+scoreboard players set @s j.cooldown 30

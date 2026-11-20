@@ -1,8 +1,7 @@
-execute positioned ~ ~ ~ store result storage j:aux sucess int 1 run function j_villagers_update:fazer/marcar/scanear/macro {in:5}
-execute if data storage j:aux {sucess:0} run return run kill @s
 
-summon marker ~ ~ ~ {Tags:["j.construcao","j.place.path"]}
+execute if function j_villagers_update:fazer/marcar/test_space/casa run return fail
+execute if function j_villagers_update:fazer/marcar/test_space/fazenda run return fail
 
-execute positioned ^ ^ ^1 run function j_villagers_update:fazer/marcar/casa
+execute if function j_villagers_update:fazer/marcar/test_space/estrada run return fail
 
-#execute as @e[sort=random,limit=1,tag=j.lote] at @s rotated as @s run function j_villagers_update:fazer/marcar/escolher_lote
+kill @s

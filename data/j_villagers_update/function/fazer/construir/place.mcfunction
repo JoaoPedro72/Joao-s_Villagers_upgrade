@@ -4,6 +4,15 @@ execute if entity @s[tag=j.place.log] run fill ~ ~ ~ ~ ~ ~ oak_log
 execute if entity @s[tag=j.place.plank] run fill ~ ~ ~ ~ ~ ~ oak_planks
 execute if entity @s[tag=j.place.cobble] run fill ~ ~ ~ ~ ~ ~ cobblestone
 execute if entity @s[tag=j.place.air] run fill ~ ~ ~ ~ ~ ~ air
+execute if entity @s[tag=j.place.composter] run fill ~ ~ ~ ~ ~ ~ composter
+execute if entity @s[tag=j.place.wood_slab] run fill ~ ~ ~ ~ ~ ~ oak_slab
+execute if entity @s[tag=j.place.water_leaf] run fill ~ ~ ~ ~ ~ ~ oak_leaves[persistent=true,waterlogged=true]
+execute if entity @s[tag=j.place.farmland] run fill ~ ~ ~ ~ ~ ~ farmland[moisture=7]
+execute if entity @s[tag=j.place.glass] run fill ~ ~ ~ ~ ~ ~ glass
+execute if entity @s[tag=j.place.glass_pane] run fill ~ ~ ~ ~ ~ ~ glass_pane
+
+
+
 
 execute if entity @s[tag=j.place.door] if block ~ ~ ~1 #j_data:can_build_on positioned ~ ~ ~1 unless entity @n[distance=..0.7,tag=j.construcao,tag=!j.place.air] run tag @s add north
 
