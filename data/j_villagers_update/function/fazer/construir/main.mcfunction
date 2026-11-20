@@ -6,7 +6,7 @@ execute unless block ~ ~ ~ #air run function j_ai:move
 execute if entity @n[tag=j.construcao,distance=..1] run function j_ai:move
 #say indo
 execute if score @s j.cooldown_virar matches 0 run rotate @s facing entity @n[tag=j.construcao] feet
-execute unless entity @n[tag=j.construcao,distance=..2] run function j_ai:move
+execute unless entity @n[tag=j.construcao,distance=1.25..2] run function j_ai:move
 execute unless entity @n[tag=j.construcao,distance=..8] run return 0
 
 
@@ -20,5 +20,9 @@ execute unless score 10 j.ticks matches 2 run return fail
 
 execute as @n[tag=j.construcao,distance=1..] at @s run function j_villagers_update:fazer/construir/place
 function j_villagers_update:ia/swing
+
+execute unless block ~ ~1 ~ #j_data:atravessavel run effect give @s regeneration 10 10 true
+execute unless block ~ ~ ~ #j_data:atravessavel rotated ~ 0 run tp ^ ^.1 ^-0.5
+execute unless block ~ ~1 ~ #j_data:atravessavel rotated ~ 0 run tp ^ ^.1 ^-0.5
 
 #execute unless entity @n[tag=j.construcao,distance=..50] run data merge entity @s {NoAI:0b}

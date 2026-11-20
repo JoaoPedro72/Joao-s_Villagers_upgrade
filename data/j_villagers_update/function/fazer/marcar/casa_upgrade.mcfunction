@@ -13,33 +13,33 @@ tag @e[tag=new] remove new
 # piso layer
 execute positioned ^00 ^ ^ run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
 execute positioned ^01 ^ ^ run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^02 ^ ^ run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^02 ^ ^ run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.log"]}
 execute positioned ^-1 ^ ^ run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^-2 ^ ^ run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^-2 ^ ^ run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.log"]}
 
 execute positioned ^00 ^ ^1 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
 execute positioned ^01 ^ ^1 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^02 ^ ^1 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^02 ^ ^1 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
 execute positioned ^-1 ^ ^1 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^-2 ^ ^1 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^-2 ^ ^1 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
 
 execute positioned ^00 ^ ^2 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
 execute positioned ^01 ^ ^2 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^02 ^ ^2 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^02 ^ ^2 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
 execute positioned ^-1 ^ ^2 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^-2 ^ ^2 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^-2 ^ ^2 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
 
 execute positioned ^00 ^ ^3 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
 execute positioned ^01 ^ ^3 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^02 ^ ^3 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^02 ^ ^3 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
 execute positioned ^-1 ^ ^3 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^-2 ^ ^3 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^-2 ^ ^3 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
 
-execute positioned ^00 ^ ^4 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^01 ^ ^4 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^02 ^ ^4 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^-1 ^ ^4 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^-2 ^ ^4 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^00 ^ ^4 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
+execute positioned ^01 ^ ^4 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
+execute positioned ^02 ^ ^4 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.log"]}
+execute positioned ^-1 ^ ^4 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
+execute positioned ^-2 ^ ^4 run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.log"]}
 
 # 1 layer
 execute positioned ^00 ^1 ^ run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.air"]}

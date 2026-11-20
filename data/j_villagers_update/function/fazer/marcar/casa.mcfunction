@@ -13,35 +13,35 @@ rotate @n[tag=new,tag=j.esquerda] ~-90 0
 tag @e[tag=new] remove new
 
 # piso layer
-execute positioned ^00 ^ ^ if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^01 ^ ^ if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^02 ^ ^ if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^-1 ^ ^ if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^-2 ^ ^ if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^00 ^ ^ if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
+execute positioned ^01 ^ ^ if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
+execute positioned ^02 ^ ^ if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.log"]}
+execute positioned ^-1 ^ ^ if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
+execute positioned ^-2 ^ ^ if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.log"]}
 
 execute positioned ^00 ^ ^1 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
 execute positioned ^01 ^ ^1 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^02 ^ ^1 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^02 ^ ^1 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
 execute positioned ^-1 ^ ^1 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^-2 ^ ^1 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^-2 ^ ^1 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
 
 execute positioned ^00 ^ ^2 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
 execute positioned ^01 ^ ^2 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^02 ^ ^2 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^02 ^ ^2 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
 execute positioned ^-1 ^ ^2 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^-2 ^ ^2 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^-2 ^ ^2 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
 
 execute positioned ^00 ^ ^3 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
 execute positioned ^01 ^ ^3 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^02 ^ ^3 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^02 ^ ^3 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
 execute positioned ^-1 ^ ^3 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^-2 ^ ^3 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^-2 ^ ^3 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
 
-execute positioned ^00 ^ ^4 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^01 ^ ^4 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^02 ^ ^4 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^-1 ^ ^4 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
-execute positioned ^-2 ^ ^4 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.plank"]}
+execute positioned ^00 ^ ^4 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
+execute positioned ^01 ^ ^4 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
+execute positioned ^02 ^ ^4 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.log"]}
+execute positioned ^-1 ^ ^4 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.cobble"]}
+execute positioned ^-2 ^ ^4 if block ~ ~ ~ #j_data:can_build_on run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.log"]}
 
 # 1 layer
 execute positioned ^00 ^1 ^ run summon marker ~ ~ ~ {Tags:["j.construcao","j.place.door"]}

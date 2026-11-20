@@ -1,8 +1,8 @@
 data merge entity @s {NoAI:0b}
 kill @e[type=marker,tag=j_path_used,tag=!j_path]
 
-execute if score 100 j.ticks matches ..49 run data modify entity @s data."j.raycast".Rotation set value 22.5
-execute if score 100 j.ticks matches 50.. run data modify entity @s data."j.raycast".Rotation set value -22.5
+execute if score 100 j.ticks matches ..49 run data modify entity @s data."j.raycast".Rotation set value 11.25
+execute if score 100 j.ticks matches 50.. run data modify entity @s data."j.raycast".Rotation set value -11.25
 
 execute align xyz positioned ~.5 ~ ~.5 rotated ~ 0 if function j_ai:obstaculo run return fail
 
